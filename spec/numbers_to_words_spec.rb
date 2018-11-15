@@ -47,6 +47,6 @@ describe('numbers_to_words.rb') do
   it("returns word for numbers 1,000,000,000-9,999,999,999") do
     expect(convert(6251345000)).to(eq("six billion two hundred fifty one million three hundred forty five thousand"))
     # expect(convert(9014000500)).to(eq("nine billion fourteen million five hundred"))
-    expect(convert(9,999,999,999)).to(eq("nine billion nine hundred ninety nine million nine hundred ninety nine thousand nine hundred ninety nine"))
+    expect(convert(9999999999)).to(eq("nine billion nine hundred ninety nine million nine hundred ninety nine thousand nine hundred ninety nine"))
   end
 end
